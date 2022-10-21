@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class KetigaFragment extends Fragment {
     private Button btnHasil;
     private EditText txt_jari_jari;
-    private TextView hasil;
+    private TextView hasil,hasil2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,7 +38,7 @@ public class KetigaFragment extends Fragment {
                     Double luas = 3.14 * (jari*jari) ;
                     Double keliling = 3.14 * (jari*2);
                     hasil.setText(String.format("%.2f", luas));
-
+                    hasil2.setText(String.format("%.2f", keliling));
                 }
             }
         });
